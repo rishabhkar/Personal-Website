@@ -16,7 +16,7 @@ const LandingSection = styled.section`
 const BackgroundPlaceholder = styled.div`
   position: absolute;
   inset: 0;
-  background: url('/assets/Buying360-1.jpg') center/cover no-repeat;
+  background: url(${import.meta.env.BASE_URL}assets/Buying360-1.jpg) center/cover no-repeat;
   opacity: 0.25;
   z-index: 0;
   /* TODO: Replace with your own background image */
