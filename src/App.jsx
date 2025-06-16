@@ -4,12 +4,12 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { FaEnvelope, FaLinkedin, FaGithub, FaJava, FaPython, FaCloud, FaRobot, FaDatabase, FaReact, FaFigma, FaCss3Alt, FaHtml5, FaJenkins, FaLock, FaEye, FaRegChartBar } from 'react-icons/fa';
 import { SiSpring, SiSap, SiGrafana, SiDynatrace, SiKibana, SiSonarqube, SiMysql } from 'react-icons/si';
 
-const profilePic = '/assets/profile.jpg';
+const profilePic = `${import.meta.env.BASE_URL}assets/profile.jpg`;
 const bgImages = [
-  '/assets/bg1.jpg', // Home
-  '/assets/bg2.jpg', // Experience
-  '/assets/bg3.jpg', // Skills
-  '/assets/bg4.jpg', // Contact
+  `${import.meta.env.BASE_URL}assets/bg1.jpg`, // Home
+  `${import.meta.env.BASE_URL}assets/bg2.jpg`, // Experience
+  `${import.meta.env.BASE_URL}assets/bg3.jpg`, // Skills
+  `${import.meta.env.BASE_URL}assets/bg4.jpg`, // Contact
 ];
 
 const GlobalStyle = createGlobalStyle`
@@ -457,7 +457,7 @@ export default function App() {
           transition={{ duration: 1.1 }}
         >
           <CompanyHeader>
-            <CompanyLogo src="/assets/King's Logo.png" alt="King's College London Logo" />
+            <CompanyLogo src={`${import.meta.env.BASE_URL}assets/King's Logo.png`} alt="King's College London Logo" />
             <CompanyName>King's College London</CompanyName>
           </CompanyHeader>
           <ProjectCard>
@@ -489,7 +489,7 @@ As I concurrently pursue my Master's in Artificial Intelligence at King's Colleg
             <div style={{ width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', margin: '2rem 0' }}>
               <video
                 ref={sermasVideoRef}
-                src="/assets/X-Men Main Screen.mp4"
+                src={`${import.meta.env.BASE_URL}assets/X-Men Main Screen.mp4`}
                 width="864"
                 height="486"
                 style={{ borderRadius: '1rem', border: '2px solid #00eaff', background: '#222' }}
@@ -574,7 +574,7 @@ As I concurrently pursue my Master's in Artificial Intelligence at King's Colleg
           transition={{ duration: 1.1, delay: 0.1 }}
         >
           <CompanyHeader>
-            <CompanyLogo src="/assets/SAP Logo.png" alt="SAP Logo" />
+            <CompanyLogo src={`${import.meta.env.BASE_URL}assets/SAP Logo.png`} alt="SAP Logo" />
             <CompanyName>SAP</CompanyName>
           </CompanyHeader>
           <ProjectCard>
@@ -592,15 +592,15 @@ As I concurrently pursue my Master's in Artificial Intelligence at King's Colleg
             {/* SAP Images with labels and responsive layout */}
             <div style={{ display: 'flex', gap: '1.5rem', flexWrap: 'wrap', justifyContent: 'center', margin: '1.5rem 0' }}>
               <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', maxWidth: '660px', width: '100%' }}>
-                <img src="/assets/SAP-1.jpg" alt="SAP-1: Procurement Workflow Page" style={{ width: '100%', maxWidth: '660px', borderRadius: '1rem', boxShadow: '0 2px 16px #00eaff33', objectFit: 'cover', cursor: 'pointer' }} onClick={() => handleImgClick('/assets/SAP-1.jpg', 'SAP-1: Procurement Workflow Page')} />
+                <img src={`${import.meta.env.BASE_URL}assets/SAP-1.jpg`} alt="SAP-1: Procurement Workflow Page" style={{ width: '100%', maxWidth: '660px', borderRadius: '1rem', boxShadow: '0 2px 16px #00eaff33', objectFit: 'cover', cursor: 'pointer' }} onClick={() => handleImgClick(`${import.meta.env.BASE_URL}assets/SAP-1.jpg`, 'SAP-1: Procurement Workflow Page')} />
                 <div style={{ color: '#b2eaff', fontSize: '0.98rem', marginTop: '0.5rem', textAlign: 'center' }}>SAP-1: Procurement Workflow Page</div>
               </div>
               <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', maxWidth: '660px', width: '100%' }}>
-                <img src="/assets/SAP-2.jpg" alt="SAP-2: Item Detail Page" style={{ width: '100%', maxWidth: '660px', borderRadius: '1rem', boxShadow: '0 2px 16px #00eaff33', objectFit: 'cover', cursor: 'pointer' }} onClick={() => handleImgClick('/assets/SAP-2.jpg', 'SAP-2: Item Detail Page')} />
+                <img src={`${import.meta.env.BASE_URL}assets/SAP-2.jpg`} alt="SAP-2: Item Detail Page" style={{ width: '100%', maxWidth: '660px', borderRadius: '1rem', boxShadow: '0 2px 16px #00eaff33', objectFit: 'cover', cursor: 'pointer' }} onClick={() => handleImgClick(`${import.meta.env.BASE_URL}assets/SAP-2.jpg`, 'SAP-2: Item Detail Page')} />
                 <div style={{ color: '#b2eaff', fontSize: '0.98rem', marginTop: '0.5rem', textAlign: 'center' }}>SAP-2: Item Detail Page</div>
               </div>
               <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', maxWidth: '660px', width: '100%' }}>
-                <img src="/assets/SAP-3.png" alt="SAP-3: Search Page" style={{ width: '100%', maxWidth: '660px', borderRadius: '1rem', boxShadow: '0 2px 16px #00eaff33', objectFit: 'cover', cursor: 'pointer' }} onClick={() => handleImgClick('/assets/SAP-3.png', 'SAP-3: Search Page')} />
+                <img src={`${import.meta.env.BASE_URL}assets/SAP-3.png`} alt="SAP-3: Search Page" style={{ width: '100%', maxWidth: '660px', borderRadius: '1rem', boxShadow: '0 2px 16px #00eaff33', objectFit: 'cover', cursor: 'pointer' }} onClick={() => handleImgClick(`${import.meta.env.BASE_URL}assets/SAP-3.png`, 'SAP-3: Search Page')} />
                 <div style={{ color: '#b2eaff', fontSize: '0.98rem', marginTop: '0.5rem', textAlign: 'center' }}>SAP-3: Search Page</div>
               </div>
             </div>
@@ -645,7 +645,7 @@ As I concurrently pursue my Master's in Artificial Intelligence at King's Colleg
           transition={{ duration: 1.1, delay: 0.2 }}
         >
           <CompanyHeader>
-            <CompanyLogo src="/assets/TCS Logo.png" alt="TCS Logo" />
+            <CompanyLogo src={`${import.meta.env.BASE_URL}assets/TCS Logo.png`} alt="TCS Logo" />
             <CompanyName>Tata Consultancy Services</CompanyName>
           </CompanyHeader>
           <ProjectCard>
@@ -684,7 +684,7 @@ As I concurrently pursue my Master's in Artificial Intelligence at King's Colleg
           transition={{ duration: 1.1, delay: 0.3 }}
         >
           <CompanyHeader>
-            <CompanyLogo src="/assets/ITC Logo.png" alt="ITC Logo" />
+            <CompanyLogo src={`${import.meta.env.BASE_URL}assets/ITC Logo.png`} alt="ITC Logo" />
             <CompanyName>ITC Limited</CompanyName>
           </CompanyHeader>
           <ProjectCard>

@@ -80,8 +80,7 @@ const Buying360 = () => (
         transition={{ duration: 0.7 }}
         viewport={{ once: true }}
       >
-        {/* Placeholder for Buying 360-1.jpg */}
-        <Img src="/assets/Buying360-1.jpg" alt="Buying 360 Visual 1" />
+        <Img src={`${import.meta.env.BASE_URL}assets/Buying360-1.jpg`} alt="Buying 360 Visual 1" />
         <Caption>Source: SAP News</Caption>
       </Visual>
       <Visual
@@ -90,8 +89,7 @@ const Buying360 = () => (
         transition={{ duration: 0.7, delay: 0.2 }}
         viewport={{ once: true }}
       >
-        {/* Placeholder for Buying 360-2.jpg */}
-        <Img src="/assets/Buying360-2.jpg" alt="Buying 360 Visual 2" />
+        <Img src={`${import.meta.env.BASE_URL}assets/Buying360-2.jpg`} alt="Buying 360 Visual 2" />
         <Caption>Source: SAP News</Caption>
       </Visual>
       <Visual
@@ -100,8 +98,7 @@ const Buying360 = () => (
         transition={{ duration: 0.7, delay: 0.4 }}
         viewport={{ once: true }}
       >
-        {/* Placeholder for Buying 360-3.png */}
-        <Img src="/assets/Buying360-3.png" alt="Buying 360 Visual 3" />
+        <Img src={`${import.meta.env.BASE_URL}assets/Buying360-3.png`} alt="Buying 360 Visual 3" />
         <Caption>Source: Medium</Caption>
       </Visual>
     </Visuals>
