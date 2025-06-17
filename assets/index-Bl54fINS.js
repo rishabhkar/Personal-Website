@@ -148,8 +148,8 @@ Error generating stack: `+n.message+`
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
-  position: absolute;
-  top: 3.2rem;
+  position: fixed;
+  top: 4.2rem;
   left: 0;
   right: 0;
   background: rgba(24, 28, 39, 0.97);
@@ -157,6 +157,7 @@ Error generating stack: `+n.message+`
   box-shadow: 0 2px 16px 0 #00eaff33;
   padding: 1.2rem 0.5rem 1.2rem 0.5rem;
   align-items: center;
+  z-index: 999;
   @media (min-width: 701px) {
     display: none;
   }
