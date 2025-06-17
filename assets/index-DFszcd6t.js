@@ -130,6 +130,7 @@ Error generating stack: `+n.message+`
     border-radius: 1.2rem;
     gap: 0.5rem;
     justify-content: flex-start;
+    transform: none;
   }
 `,Ob=gt.button`
   display: none;
